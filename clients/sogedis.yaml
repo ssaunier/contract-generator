@@ -1,0 +1,8 @@
+client:
+  nom: Sogedis SAS
+  capital: 1162500
+  rcs_ville: Rouen
+  rcs_numero: 389279951
+  adresse:  "3, rue Lavoisier 76305 Sotteville-les-Rouen"
+  representant_nom: Patrick Langlois
+  representant_qualite: DSI
