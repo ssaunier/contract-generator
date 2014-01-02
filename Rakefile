@@ -4,8 +4,9 @@ require "fileutils"
 
 def generate_contract(client, folder)
   liquid2pdf client, "csv.tex", folder
-
   clean_all_except_pdf folder
+
+  puts "-----> Generated contract for #{client["client"]["nom"]}"
 end
 
 def liquid2pdf(context, filename, out_folder)
