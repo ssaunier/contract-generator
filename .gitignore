@@ -1,2 +1,7 @@
 .bundle
+clients
 contrats
+signature.*
+*.log
+*.aux
+*.fdb_latexmk

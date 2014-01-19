@@ -6,3 +6,15 @@ client:
   adresse:  "3, rue Lavoisier 76305 Sotteville-les-Rouen"
   representant_nom: Patrick Langlois
   representant_qualite: DSI
+
+facturation:
+  taux_horaire: 150
+
+tma_logiciels:
+  - Le site Ecommerce pieces-detachees.sogedis.fr
+  - Le site produits-finis.sogedis.fr
+  - Les sites annexes *.sogedis.fr hébergés sur Hegerys
+  - La gestion DNS du domaine sogedis.fr
+  - L'intranet de Sogedis (intranet.sogedis.local)
+  - L'interconnexion du site ecommerce Sogedis avec l'ERP Divalto
+  - L'interconnexion avec les postes de livraison équipés du logiciel Colissimo

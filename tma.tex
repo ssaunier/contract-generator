@@ -1,0 +1,152 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\renewcommand{\thesection}{Article \arabic{section}}
+\setlength{\parindent}{0cm}
+
+\usepackage{geometry}
+\geometry{letterpaper,tmargin=2cm,bmargin=2cm,lmargin=3cm,rmargin=3cm}
+
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage[parfill]{parskip}
+
+\begin{document}
+
+\begin{center}
+{\Large Contrat de Maintenance Applicative}
+\end{center}
+
+\vspace{.5cm}
+
+\hrule height .1mm
+
+\vspace{.5cm}
+
+\noindent Contrat applicable à compter du 1er janvier 2014 entre les soussignés :
+\\
+\\
+{\textbf{FullStack EURL} au capital social de 5000 euros, immatriculée au RCS de Paris sous le numéro 799679063, dont le siège est sis 3B rue Jean-Marie Jégo 75013 Paris, représentée aux fins des présentes par Sébastien Saunier en qualité de gérant,
+}
+\\
+(ci-après dénommé ``FullStack''),
+\\
+\\
+et
+\\
+\\
+{\textbf{ {{ client.nom }} } au capital social de {{ client.capital }} euros, immatriculée au RCS de {{ client.rcs_ville }} sous le numéro {{ client.rcs_numero }}, dont le siège social est sis {{ client.adresse }}, représentée aux fins des présentes par {{ client.representant_nom }} en qualité de {{ client.representant_qualite }},
+}
+\\
+(ci-après dénommé le ``Client'').
+\\
+
+Il a été arrêté et convenu ce qui suit.
+
+\section{Objet}
+
+Le présent contrat a pour objet la prise en charge de la maintenance des logiciels suivants :
+
+\begin{itemize}
+  {% for logiciel in tma_logiciels %}
+  \item {{ logiciel }}
+  {% endfor %}
+\end{itemize}
+
+Ne sont pas comprises dans la maintenance définie ci dessus, les dépenses diverses matérielles nécessaires pour la réparation des dommages subis par le client, si ces dommages résultent notamment d'une mauvaise utilisation, d'une utilisation abusive du logiciel ou d'une négligence du client, d'une installation électrique défectueuse, de la foudre, du non respect des instructions d'installation ou d'exploitation, d'une intervention sur le logiciel effectuée par un tiers non agréé, expressément par le prestataire ainsi que tout dommage résultant de l'emploi de fourniture et matériel non agrée, de la force majeure ou du fait du tiers.
+
+Ne sont pas non plus comprises les prestations d'hébergement de la solution logicielle. Il sera de la responsabilité du client de choisir les différents matériels et prestataires pour assurer l'hébergement de la solution.
+
+La responsabilité de FullStack est limitée aux obligations contractuelles définies au terme du présent contrat. FullStack a une obligation de moyens.
+
+\section{Obligations du client}
+
+Le client doit assurer à FullStack toute facilité pour l'exécution de sa prestation. Le client devra laisser libre accès au logiciel maintenu.
+
+Le client s'oblige à fournir à FullStack les coordonnées d'un interlocuteur technique désigné, contactable téléphoniquement et par e-mail.
+
+\section{Nature des prestations}
+
+Les prestations assurées par FullStack seront rémunérées au tarif horaire défini dans l'article Tarifs. Sur toute sollicitation du client par e-mail our par téléphone, FullStack facturera le temps passé à la résolution du problème ou l'implémentation d'une nouvelle fonctionnalité.
+
+FullStack assurera les prestations de :
+
+\begin{itemize}
+  \item Assistance au client (Téléphone, email), pour fournir les explications nécessaires à la bonne utilisation du logiciel.
+  \item Maintenance corrective
+  \item Mise à jour
+  \item Maintenance évolutive
+  \item Maintenance préventive
+\end{itemize}
+
+\section{Tarifs}
+
+FullStack émettra une facture mensuelle récapitulant la totalité des heures passées à fournir les prestations au client. Le tarif horaire est fixé à {{ facturation.taux_horaire }} euros hors taxes. Une TVA réglementaire de 20\% sera appliquée au total.
+
+En cas d'intervention hors heures ouvrées, le tarif horaire hors taxe est \textbf{doublé}. Ces heures ouvrées sont les suivantes :
+
+\begin{itemize}
+  \item Lundi au vendredi, 10h à 18h
+  \item Hors jours fériés
+\end{itemize}
+
+Le paiement des factures sera exigible à réception.
+
+Les frais engagés par FullStack au titre d'une intervention auprès du client seront refacturés au réel.
+
+\section{Durée}
+
+Ce contrat est valable 12 mois, du 1er janvier 2014 au 31 décembre 2014. Il est reconduit par expresse reconduction par période de douze mois. Une revalorisation du tarif de prestation peut alors être appliquée.
+
+\section{Propriété et sous-traitance}
+
+Le prestataire conservera la propriété de tous les développements informatiques ou autres dont il sera l'auteur à l'exclusion des fichiers dont il aura assuré le traitement pour le compte du client.
+
+Il pourra seul prétendre au savoir faire développé lors de ses prestations.
+
+Le prestataire se réserve le droit de sous-traiter tout ou partie des prestations, objet du présent contrat, à tout tiers ayant reçu son agrément.
+
+\section{Secret et confidentialité}
+
+Chacune des parties s'engage à conserver confidentiels les informations et documents concernant l'autre partie, de quelque nature qu'ils soient : statistiques d'appels, codes confidentiels, informations économiques, techniques, commerciales, publicitaires, etc, auxquels elle aurait pu avoir accès au cours de l'exécution du contrat.
+
+\section{Non-sollicitaion de personnel}
+
+Chacune des parties s'engage, pendant la durée du contrat augmentée d'une période de douze mois à compter de son expiration, à ne prendre à son service, engager ou à faire des offres d'engagement à un collaborateur de l'autre partie affecté à l'exécution des présentes, sans accord écrit et préalable de l'autre partie.
+
+Chacune des parties s'engage en cas de non-respect d'une telle clause à dédommager l'autre partie en lui versant une indemnité égale à la rémunération brute totale versée à ce collaborateur pendant l'année précédant son départ.
+
+\section{Stipulations diverses}
+
+Le licencié déclare et garantit que le nombre de copies du logiciel maintenu déclarées correspond au nombre de licences qu'il a valablement acquises aux termes des conditions générales de maintenance.
+
+Les conditions générales de maintenance seront interprétées et régies conformément au droit français.
+Tous les litiges, difficultés, réclamations relatifs à l'interprétation et à l'exécution des conditions générales de maintenance seront soumis aux Tribunaux compétents.
+
+Aucune modification, suppression ou addition au présent contrat ne pourra être apportée sans l'accord écrit des deux parties.
+
+Le fait pour le prestataire de ne pas se prévaloir de l'inobservation par le client de l'une quelconque des obligations que ce dernier a en charge pourra être interprétée comme comportant pour l'avenir renonciation à s'en prévaloir.
+
+Les conditions générales de maintenance, les conditions particulières, le contrat et tous avenants qui seraient signés par les parties représentent l'intégralité de l'accord entre les parties en ce qui concerne leur objet.
+
+L'offre de concéder la licence de maintenance au licencié est expressément limitée aux termes des conditions générales de maintenance et des conditions particulières et toutes propositions relatives à l'ajout de stipulations additionnelles ou différentes y compris sans que ceux ci ne soient limitives, les stipulations de tout bon de commande sont réputées rejetées par les parties sauf accord expresse des deux parties.
+
+Si une ou plusieurs stipulations du contrat sont tenues pour non valides ou déclarées telles en application d'une Loi, d'un règlement ou à la suite d'une décision définitive d'une juridiction compétence, les autres stipulations du contrat garderont toute leur force et leur portée.
+
+Les parties conviennent alors de remplacer la clause déclarée nulle et non valide par une clause qui se rapprochera le plus quant à son contenu de la clause initialement arrêtée.
+
+\vspace{2cm}
+
+\noindent Fait à Paris,\\\\\\\\\\
+
+\noindent \begin{tabular}{l l l}
+Le client : & \rule{6cm}{.2pt} & Date : \rule{2.4cm}{.2pt}\\
+                         & {{ client.representant_nom }}      & \\\\\\
+FullStack :          & \includegraphics[height=20mm,width=45mm]{../../signature.jpg} & Date : \today \\
+                         & Sébastien Saunier      & \\
+\end{tabular}
+
+\end{document}
